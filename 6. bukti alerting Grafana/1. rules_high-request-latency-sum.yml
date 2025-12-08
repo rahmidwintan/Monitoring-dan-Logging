@@ -8,4 +8,5 @@ groups:
           severity: warning
         annotations:
           summary: "Total latency request tinggi"
+
           description: "Total latency request melebihi 5000ms selama 5 menit terakhir."
