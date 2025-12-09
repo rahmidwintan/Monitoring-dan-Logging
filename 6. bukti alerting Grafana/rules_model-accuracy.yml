@@ -1,0 +1,11 @@
+groups:
+  - name: model_accuracy_alerts
+    rules:
+      - alert: LowModelAccuracy
+        expr: model_accuracy < 0.8
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Akurasi model turun"
+          description: "Akurasi model di bawah 80% dalam 5 menit terakhir."
